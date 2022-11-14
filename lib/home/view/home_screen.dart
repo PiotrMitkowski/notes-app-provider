@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app_provider/add_note/view/add_note_screen.dart';
 import 'package:notes_app_provider/home/widgets/widgets.dart';
 import 'package:notes_app_provider/l10n/l10n.dart';
 
@@ -24,8 +25,7 @@ class _HomeView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // TODO(PiotrMitkowski): push add note route
-          // Navigator.push(context, AddNoteScreen.route());
+          Navigator.push(context, AddNoteScreen.route());
         },
         child: const Icon(Icons.add),
       ),
