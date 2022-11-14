@@ -17,6 +17,7 @@ class _HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final labels = context.l10n;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(labels.homeScreenTitle),

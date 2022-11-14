@@ -7,6 +7,7 @@ class NotesListItem extends StatelessWidget {
 
   String _formatCreationDate(DateTime rawDate) {
     final formatter = DateFormat('EEE, d MMM y, HH:mm');
+
     return formatter.format(rawDate);
   }
 
@@ -15,6 +16,7 @@ class NotesListItem extends StatelessWidget {
     final theme = Theme.of(context);
     final labels = context.l10n;
     final formattedDate = _formatCreationDate(DateTime.now());
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Column(
