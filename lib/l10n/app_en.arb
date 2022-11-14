@@ -1,0 +1,10 @@
+{
+  "appTitle": "Notes app",
+  "homeScreenTitle": "Notes",
+  "addNoteScreenTitle": "Add note",
+  "addNoteError": "Could not save your note.",
+  "saveButtonTitle": "SAVE",
+  "noteFieldHint": "Enter note content",
+  "noteFieldValidationError": "Please enter note",
+  "noteCreationDateLabel": "Created:"
+}
