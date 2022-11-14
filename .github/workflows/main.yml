@@ -1,14 +1,14 @@
 name: Flutter_Tests
 
-env:
-  FLUTTER_VERSION: 3.3.8
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
+
+env:
+  FLUTTER_VERSION: 3.3.8
 
 jobs:
   tests:
@@ -20,7 +20,7 @@ jobs:
       - name: Install and set Flutter version
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: $FLUTTER_VERSION
+          flutter-version: ${{ env.FLUTTER_VERSION }}
       - name: Restore packages
         run: flutter pub get
       - name: Analyze
