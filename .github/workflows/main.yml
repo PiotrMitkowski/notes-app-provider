@@ -25,6 +25,8 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
       - name: Restore packages
         run: flutter pub get
+      - name: Generate l10n
+        run: flutter gen-l10n
       - name: Analyze
         run: flutter analyze
       - name: Run tests
