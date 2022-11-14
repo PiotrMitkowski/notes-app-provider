@@ -13,3 +13,7 @@ linter:
     public_member_api_docs: false
 
 dart_code_metrics:
+  extends:
+    - package:dart_code_metrics/presets/flutter_all.yaml
+  rules:
+    prefer-single-widget-per-file: false

@@ -10,14 +10,17 @@ dependencies:
   cupertino_icons: 1.0.5
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   intl: 0.17.0
 
 dev_dependencies:
-  build_runner: 2.3.2
-  dart_code_metrics: 5.0.1
+  build_runner: 2.2.0
+  dart_code_metrics: 4.19.2
   flutter_lints: 2.0.1
   flutter_test:
     sdk: flutter
+  test: 1.21.4
   very_good_analysis: 3.1.0
 
 flutter:
